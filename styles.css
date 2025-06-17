@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -22,54 +22,36 @@
 body {
     background-color: var(--primary-color);
     /* background-color: #000080; */
-    color: white
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-}
-
-section h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-h1 sup {
-    font-size: 0.95rem;
-    font-weight: 300;
+    /* background-image: linear-gradient(to bottom right, var(--primary-color), var(--primary-color), var(--primary-color), white);
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease-in-out infinite alternate; */
     color: white;
-}
-
-main {
+    padding: 100px;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--base-time-font-size);
-    gap: 1rem;
+    height: 100vh;
 }
 
-main span {
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-lg {
+    font-size: 6.125rem;
+    line-height: 5.0rem;
+}
+
+.heart {
+    color: white;
     font-size: 1.5rem;
-    font-weight: 700;
+    margin-left: 0.25rem;
 }
 
-.font-montserrat {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+p a {
+    color: white;
+    text-decoration: underline;
 }
+
 
 .font-orbitron {
     font-family: "Orbitron", sans-serif;
@@ -78,12 +60,265 @@ main span {
     font-style: normal;
 }
 
-.text-sm {
-    font-size: 0.875rem;
+input {
+    outline: none;
+    border: white 1px solid;
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    color: white;
 }
 
-.heart {
-    color: red;
-    font-size: 1.5rem;
-    margin-left: 0.25rem;
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    accent-color: white;
+    /* For full custom styling, consider using appearance: none and adding a custom checkmark */
 }
+
+input[type='checkbox']:checked {
+    border: 2px solid white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    justify-content: space-between;
+    max-height: 100vh;
+    width: 100%;
+    flex: 1;
+}
+
+section {
+    flex: 3;
+    height: 100%;
+    width: 100%;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.checkbox-container input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.checkbox-container label {
+    font-size: 1rem;
+    color: white;
+}
+
+.checkbox-container button {
+    color: var(--base-background-color);
+    border: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.mainsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* animations go here */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes background {
+    0% {
+        background-color: var(--primary-color);
+    }
+
+    100% {
+        background-color: var(--base-background-color);
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    body {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        display: none;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    body {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        display: none;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
+
+/* @media (prefers-color-scheme: dark) {
+  .theme-a.adaptive {
+    background: #753;
+    color: #dcb;
+    outline: 5px dashed #000;
+  }
+} */
